@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+// src/App.js (Versión Final con Tutorial)
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import KitchenView from './KitchenView';
+import ManagerView from './ManagerView';
+import HelpView from './HelpView'; // 1. Importar la nueva vista
+
+function HomePage() {
+  return (
+    <nav className="home-nav">
+      <h1>Bienvenido a ControlQueso</h1>
+      <Link to="/kitchen" className="nav-link kitchen-link">Vista de Cocina</Link>
+      <Link to="/manager" className="nav-link manager-link">Panel del Gerente</Link>
+      {/* 2. Añadir el enlace a la ayuda */}
+      <Link to="/help" className="nav-link help-link">Tutorial / Ayuda</Link>
+    </nav>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/kitchen" element={<KitchenView />} />
+        <Route path="/manager" element={<ManagerView />} />
+        {/* 3. Añadir la nueva ruta */}
+        <Route path="/help" element={<HelpView />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

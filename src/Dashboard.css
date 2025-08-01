@@ -1,0 +1,9 @@
+/* src/Dashboard.css (Código Completo y Verificado) */
+.dashboard-container { margin-top: 20px; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.dashboard-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.dashboard-table th, .dashboard-table td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+.dashboard-table th { background-color: #007bff; color: white; }
+.dashboard-table tbody tr:nth-child(even) { background-color: #f2f2f2; }
+.deviation-cell { font-weight: bold; }
+.deviation-positive { color: #D8000C; background-color: #FFBABA !important; }
+.deviation-negative { color: #2b7d2b; background-color: #d4edda !important; }

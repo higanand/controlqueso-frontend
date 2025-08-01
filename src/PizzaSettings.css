@@ -1,0 +1,8 @@
+/* src/PizzaSettings.css (Código Completo y Verificado) */
+.settings-container { margin-top: 20px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.pizza-list { margin-top: 15px; }
+.pizza-item { display: flex; align-items: center; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee; }
+.pizza-name { font-weight: bold; }
+.grams-input { width: 80px; padding: 5px; text-align: center; border: 1px solid #ccc; border-radius: 4px; }
+.save-button { margin-top: 20px; padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+.save-button:hover { background-color: #218838; }
